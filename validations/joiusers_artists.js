@@ -6,7 +6,6 @@ module.exports.post = {
   body: {
     mbid: Joi.string()
       .label('Mbid')
-      .required()
       .length(36)
       .trim()
   }
@@ -18,6 +17,5 @@ module.exports.delete = {
       .label('ccauid')
       .integer()
       .min(1)
-      .required()
   }
 };
